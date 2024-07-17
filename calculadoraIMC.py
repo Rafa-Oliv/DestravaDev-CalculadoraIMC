@@ -120,13 +120,11 @@ def main():
                 
                 text_color = definir_cor_texto(imc)
                 
-                window['imc'].update(imc)
+                window['imc'].update(imc,text_color=text_color)
                 
-                window['imc'].update(text_color=text_color)
+                window['diagnostico'].update(diagnostico,text_color=text_color)
                 
-                window['diagnostico'].update(diagnostico)
-                
-                window['diagnostico'].update(text_color=text_color)
+            
                 
                 
  if __name__ == '__main__':
